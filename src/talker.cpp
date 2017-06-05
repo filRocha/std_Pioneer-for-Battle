@@ -2,6 +2,7 @@
 #include "std_msgs/String.h"
 
 #include <sstream>
+// AULA DO DIA 05/06	
 
 /**
  * This tutorial demonstrates simple sending of messages over the ROS system.
