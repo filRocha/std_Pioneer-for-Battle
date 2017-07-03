@@ -186,9 +186,6 @@ include_directories(
 #   PATTERN ".svn" EXCLUDE
 # )
 
-add_executable(talker src/talker.cpp)
-target_link_libraries(talker ${catkin_LIBRARIES})
-add_dependencies(talker beginner_tutorials_generate_messages_cpp)
 
 
 #############
