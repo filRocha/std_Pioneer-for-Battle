@@ -41,6 +41,9 @@ class ControleRobo():
 			if self.keyUp==1 and self.keyLeft==0 and self.keyRight==0:
 				comando.motEsquerdo=1
 				comando.motDireito=1
+			elif self.keyDown==1 and self.keyLeft==0 and self.keyRight==0:
+				comando.motEsquerdo=-1
+				comando.motDireito=-1
 			elif self.keyUp==1 and self.keyLeft==0 and self.keyRight==1:
 				comando.motEsquerdo=1
 				comando.motDireito=0.6
@@ -50,9 +53,6 @@ class ControleRobo():
 			elif self.keyUp==0 and self.keyLeft==0 and self.keyRight==0:
 				comando.motEsquerdo=0
 				comando.motDireito=0
-			elif self.keyDown==1 and self.keyLeft==0 and self.keyRight==0:
-				comando.motEsquerdo=-1
-				comando.motDireito=-1
 			elif self.keyDown==1 and self.keyLeft==0 and self.keyRight==1:
 				comando.motEsquerdo=-1
 				comando.motDireito=-0.6
