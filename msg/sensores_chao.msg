@@ -1,2 +1,4 @@
-float32 dist_frente
-float32 dist_tras
+float32 dist_frente1
+float32 dist_frente2
+float32 dist_tras1
+float32 dist_tras2
