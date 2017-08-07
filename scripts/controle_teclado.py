@@ -112,5 +112,5 @@ if __name__ == '__main__':
 
 	#Instancia a classe e entra em um regime de tratamento de eventuais erros
 	try:
-		obj_no = ControleRobo(1)
+		obj_no = ControleRobo(2)
 	except rospy.ROSInterruptException: pass
