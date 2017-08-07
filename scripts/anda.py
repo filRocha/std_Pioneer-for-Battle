@@ -18,8 +18,10 @@ class ControleRobo():
 	def __init__(self,num_robo):
 		
 		#definindo variaveis
-		self.sensorTras = 0
-		self.sensorFrente = 0
+		self.sensorTras1 = 0
+		self.sensorFrente1 = 0
+		self.sensorTras2 = 0
+		self.sensorFrente2 = 0
 
 		rospy.loginfo("Num Robo "+ str(num_robo))
 
@@ -31,20 +33,23 @@ class ControleRobo():
 		#Iniciio do comando do robo
 		comando=motores()
 		while not rospy.is_shutdown():
-	
-			if self.sensorFrente < 0.1:
-				comando.motEsquerdo=-1
-				comando.motDireito=-1
-			else:
+
+			if self.sensorFrente1 > 0.08 or self.sensorFrente2 > 0.08:
 				comando.motEsquerdo=1
 				comando.motDireito=1
+			else:
+				comando.motEsquerdo=-1
+				comando.motDireito=-1
 
 			self.pub.publish(comando)
 
 	#Funcao que le o sensor do chao
 	def sensorChaoCallback(self,data):
-		self.sensorTras = data.dist_tras
-		self.sensorFrente = data.dist_frente
+		self.sensorTras1 = data.dist_tras1
+		self.sensorFrente1 = data.dist_frente1
+		self.sensorTras2 = data.dist_tras2
+		self.sensorFrente2 = data.dist_frente2
+
 
 
 
