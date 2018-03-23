@@ -1,6 +1,6 @@
 # ESCOLA DE MINAS - UNIVERSIDADE FEDERAL DE OURO PRETO #
 
-# TrabalhoPratico - Robótica Móvel #
+# Trabalho Prático - Robótica Móvel #
 
 Contém os arquivos necessários ao Trabalho Prático da disputa de derrubar caixas dos robôs Pioneer.
 
