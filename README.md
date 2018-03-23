@@ -6,6 +6,10 @@ Contém os arquivos necessários ao Trabalho Prático da disputa de derrubar cai
 
 ** Este repositório é um pacote feito para o ROS Kinect. Eventuais bugs poderão aparecer em outras versões. **
 
+** Utilizado o pacote python-catkin-tools para compilação deste **
+
+** Interface utilizada para comunicar ROS<->V-REP: https://github.com/CoppeliaRobotics/v_repExtRosInterface **
+
 # Pastas #
   - vrep_model: contém a cena para o simulador.
   - scripts: código básicos em Python para controle do braço. Nestes arquivos estão indicados onde devem ser inseridos a lógica do grupo.
